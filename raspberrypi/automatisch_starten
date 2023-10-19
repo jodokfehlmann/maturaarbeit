@@ -1,0 +1,26 @@
+
+nano /etc/init.d/gpsbaudfreq:
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides: gps-inititization: 9600 baud, 1000ms
+# Required-Start: gps
+# Required-Stop: 
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Writes 9600 in /home/pi/.gps.baud and 1000 in /home/pi/.gps.freq
+# Description: 
+### END INIT INFO
+
+
+
+case "$1" in
+        start|reload|restart|force-reload)
+                echo "9600" > /home/pi/.gps.baud
+                echo "1000" > /home/pi/.gps.freq
+        ;;
+        stop|status)
+        ;;
+esac
+
+
+sudo update-rc.d  defaults

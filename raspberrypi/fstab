@@ -1,0 +1,6 @@
+proc            /proc           proc    defaults          0       0
+PARTUUID=034aa078-01  /boot           vfat    defaults          0       2
+PARTUUID=034aa078-02  /               ext4    defaults,noatime  0       1
+# a swapfile is not a swap partition, no line here
+#   use  dphys-swapfile swap[on|off]  for that
+PARTUUID=02d38da7-6272-4f99-8dd5-c3a3f0cc5e93	/media/pidrive	ext4	defaults	0	0
