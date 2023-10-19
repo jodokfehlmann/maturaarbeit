@@ -1,0 +1,3 @@
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /usr/bin/python /home/pi/Documents/programme/python/gps_ma/gps_baud.py
+2,7,12,17,22,27,32,37,42,47,52,57 * * * * /usr/bin/python /home/pi/Documents/programme/python/gps_ma/gps_frequ.py
+* * * * * /home/pi/bin/starte_logger

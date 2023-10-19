@@ -1,0 +1,9 @@
+#!/bin/bash
+
+prozess=$(ps -aux | grep python | grep gpslogger.py | wc -l)
+
+if [ $prozess -lt 1 ]
+then
+    /usr/bin/python /home/pi/Documents/programme/python/gps_ma/gpslogger.py &
+fi
+
